@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+.searchBar{
+  width: 1450px;
+  height: auto;
+  
+  margin: 10px;
+  padding: 8px;
+  color:purple;
+  border-radius: 7px;
+  
+  
+}
+.table-wrapper {
+	background: #fff;
+	padding: 20px 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table.table tr th, table.table tr td {
+	border-color: #e9e9e9;
+	padding: 3px 5px;
+	vertical-align: middle;
+}
+table.table-hover tbody tr:hover {
+	background: #f5f5f5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.edit {
+	color: #FFC107;
+  margin: 5px;
+  
+  cursor: pointer;
+}
+.edit:hover {
+	transform: scale(1.4);
+}
+.edit:active {
+	transform: scale(1);
+}
+.delete {
+  margin: 10px;
+	color: #F44336;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.delete:hover{
+  transform: scale(1.4); 
+}
+.delete:active{
+  transform: scale(1);
+}
+
+.pageButn{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.pagination {
+  margin-left: 350px;
+}
+.pagination li a {
+	border: none;
+	font-size: 17px;
+	min-width: 40px;
+	min-height: 40px;
+	color: #999;
+	margin: 0 10px;
+	border-radius: 20px ;
+	text-align: center;
+  font-size: 19px;
+  padding:5px;
+  
+}
+.pagination li a:hover {
+	color: #666;
+  background: #0397d6;
+}	
+.pagination li.active a, .pagination li.active a.page-link {
+	background: #0397d6;
+}
+
+.pagination li.disabled i {
+	color: #ccc;
+}
+
+.checkbox{
+
+width: 15px;
+height: 15px;
+cursor: pointer;
+
+}
+.checkbox:active{
+  background: green;
+  
+  }
+
+
+.deleteSelected{
+  border-radius: 25px;
+  margin-left: 30px;
+  background-color: red;
   color: white;
+  width: 160px;
+  font-weight: 400;
+  border: none;
+  padding: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.deleteSelected:hover{
+  transform: scale(1.1);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.deleteSelected:active{
+  transform: scale(1);
 }
